@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DensouAPI" />
+        <module name="DensouAPP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DensouAPI" target="1.8" />
+      <module name="DensouAPP" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

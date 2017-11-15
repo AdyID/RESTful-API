@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DensouAPI.iml" filepath="$PROJECT_DIR$/DensouAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DensouAPP.iml" filepath="$PROJECT_DIR$/DensouAPP.iml" />
     </modules>
   </component>
 </project>
