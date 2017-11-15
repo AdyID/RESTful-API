@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="e2d4ffbc-bb27-4eff-9c8a-417ad1c26a7a" name="Default" comment="" />
 =======
     <list default="true" id="56938dc8-011c-40d1-80e8-76e7aff3f0c0" name="Default" comment="" />
 >>>>>>> origin/master
+=======
+    <list default="true" id="e2d4ffbc-bb27-4eff-9c8a-417ad1c26a7a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Banner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Campaign.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Creative.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Report.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+    </list>
+>>>>>>> parent of 1fd7aeb... c
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -523,6 +534,7 @@
       <option name="presentableId" value="Default" />
 <<<<<<< HEAD
       <updated>1510750698880</updated>
+<<<<<<< HEAD
       <workItem from="1510750700263" duration="3360000" />
 =======
       <updated>1510749524761</updated>
@@ -530,10 +542,14 @@
       <workItem from="1510749694986" duration="11000" />
       <workItem from="1510750132975" duration="3653000" />
 >>>>>>> origin/master
+=======
+      <workItem from="1510750700263" duration="3013000" />
+>>>>>>> parent of 1fd7aeb... c
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="3786000" />
   </component>
@@ -542,6 +558,9 @@
 =======
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="3360000" />
+=======
+    <option name="totallyTimeSpent" value="3013000" />
+>>>>>>> parent of 1fd7aeb... c
   </component>
   <component name="ToolWindowManager">
     <frame x="1017" y="44" width="866" height="1060" extended-state="0" />
