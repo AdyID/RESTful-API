@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7c0735f-ba04-4a39-b05c-621c4b6f10be" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/endpoints/Banner.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/endpoints/Campaign.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/endpoints/Report.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+=======
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
@@ -44,8 +47,13 @@
       <file leaf-file-name="Banner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/endpoints/Banner.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="231">
               <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+=======
+            <state relative-caret-position="286">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#236#237#0" expanded="true" />
@@ -106,12 +114,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/endpoints/Banner.java" />
         <option value="$PROJECT_DIR$/src/main/java/endpoints/Campaign.java" />
         <option value="$PROJECT_DIR$/src/main/java/endpoints/Report.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/endpoints/Banner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/endpoints/Campaign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/endpoints/Report.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
       </list>
     </option>
   </component>
@@ -724,13 +740,21 @@
       <updated>1510747117133</updated>
       <workItem from="1510747121899" duration="1059000" />
       <workItem from="1510754958244" duration="447000" />
+<<<<<<< HEAD
       <workItem from="1510755736919" duration="65000" />
       <workItem from="1510756661915" duration="35000" />
+=======
+      <workItem from="1510755736919" duration="755000" />
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1606000" />
+=======
+    <option name="totallyTimeSpent" value="2261000" />
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1060" extended-state="0" />
@@ -948,18 +972,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/endpoints/Campaign.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="147">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+=======
+        <state relative-caret-position="41">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/endpoints/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/endpoints/Banner.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="231">
           <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+=======
+        <state relative-caret-position="286">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
@@ -968,6 +1010,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/endpoints/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -977,9 +1020,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/endpoints/Campaign.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+>>>>>>> 365c4d4a2c073eba5eb57df76c197a26c0b5b334
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="110">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
