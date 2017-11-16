@@ -1,19 +1,27 @@
 /**
  * Created by aezpr on 11/15/2017.
  */
+import endpoints.Banner;
+import endpoints.Campaign;
+
 import static spark.Spark.*;
 
 public class Main {
     public static void main(String[] args) {
-        int verify = -1; // campaign => verify = 0; if banner => verify = 1;
-        int id=0;
+        Campaign campaign = new Campaign();
         get("/campaign/:id", (req, res) -> {
-            return "Campaign ID is: "+ req.params(":id");
+            final int i = Integer.parseInt(req.params(":id"));
+            campaign.setId(i);
+            System.out.println(i);
+            return "Campaign ID is: "+ campaign.getId();
+
         });
+        Banner banner = new Banner();
         get("/banner/:id", (req, res) -> {
-            return "Banner ID is: "+ req.params(":id");
+            final int i = Integer.parseInt(req.params(":id"));
+            banner.setId(i);
+            System.out.println(i);
+            return "Banner ID is: "+ banner.getId();
         });
-        System.out.println(verify);
-        System.out.println(id);
     }
 }
