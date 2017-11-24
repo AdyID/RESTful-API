@@ -1,14 +1,27 @@
 package endpoints;
 
 import java.net.URL;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Banner {
     private int id;
-    private Date created;
+    private LocalDateTime created;
     private int clicks;
     private int impressions;
     private URL creative;
+
+    public Banner(){}
+
+    public Banner(LocalDateTime created){
+        this.created=LocalDateTime.now();
+    }
+
+    public Banner(int id, int clicks, int impressions){
+        this.id=id;
+        this.clicks=clicks;
+        this.impressions=impressions;
+    }
 
     public int getId() {
         return id;
@@ -18,11 +31,11 @@ public class Banner {
         this.id = id;
     }
 
-    public Date getCreated() {
+    public LocalDateTime getCreated() {
         return created;
     }
 
-    public void setCreated(Date created) {
+    public void setCreated(LocalDateTime created) {
         this.created = created;
     }
 

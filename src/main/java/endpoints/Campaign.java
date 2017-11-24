@@ -1,15 +1,29 @@
 package endpoints;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Campaign {
 
     private int id;
     private String name;
-    private Date created;
+    private LocalDateTime created;
     private int clicks;
     private int impressions;
 
     private Banner[] banners = new Banner[10];
+
+    public Campaign(){}
+
+    public Campaign(LocalDateTime created){
+        this.created=LocalDateTime.now();
+    }
+
+    public Campaign(int id, String name, int clicks, int impressions){
+        this.id=id;
+        this.name=name;
+        this.clicks=clicks;
+        this.impressions=impressions;
+    }
 
     public int getId() {
         return id;
@@ -27,11 +41,11 @@ public class Campaign {
         this.name = name;
     }
 
-    public Date getCreated() {
+    public LocalDateTime getCreated() {
         return created;
     }
 
-    public void setCreated(Date created) {
+    public void setCreated(LocalDateTime created) {
         this.created = created;
     }
 

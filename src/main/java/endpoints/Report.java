@@ -1,4 +1,5 @@
 package endpoints;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Report {
@@ -6,8 +7,22 @@ public class Report {
     private int id;
     private int clicks;
     private int impressions;
-    private Date created;
+    private LocalDateTime created;
     private int banner_id;
+
+    public Report(){
+    }
+
+    public Report(int id, int clicks, int impressions, int banner_id){
+        this.id = id;
+        this.clicks=clicks;
+        this.impressions=impressions;
+        this.banner_id=banner_id;
+    }
+
+    public Report(LocalDateTime created){
+        this.created=LocalDateTime.now();
+    }
 
     public int getId() {
         return id;
@@ -33,11 +48,11 @@ public class Report {
         this.impressions = impressions;
     }
 
-    public Date getCreated() {
+    public LocalDateTime getCreated() {
         return created;
     }
 
-    public void setCreated(Date created) {
+    public void setCreated(LocalDateTime created) {
         this.created = created;
     }
 
