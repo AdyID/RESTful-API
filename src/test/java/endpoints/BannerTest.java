@@ -10,34 +10,23 @@ import static org.junit.Assert.*;
 public class BannerTest {
     private final Banner banner = new Banner(2,5,6);
 
-
     @org.junit.Test
     public void getId() throws Exception {
        assertEquals(banner.getId(),2);
-
     }
-
-
-
-    @org.junit.Test
-    public void getCreated() throws Exception {
-    }
-
-
 
     @org.junit.Test
     public void getClicks() throws Exception {
         assertEquals(banner.getClicks(),5);
     }
-
-
-
     @org.junit.Test
     public void getImpressions() throws Exception {
         assertEquals(banner.getImpressions(),6);
     }
 
-
+    @org.junit.Test
+    public void getCreated() throws Exception {
+    }
 
     @org.junit.Test
     public void getCreative() throws Exception {

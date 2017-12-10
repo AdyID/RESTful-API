@@ -72,4 +72,5 @@ public class Campaign {
     public void setBanners(Banner[] banners) {
         this.banners = banners;
     }
+
 }

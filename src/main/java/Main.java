@@ -18,22 +18,48 @@ public class Main {
             final int i = Integer.parseInt(req.params(":id"));
             campaign.setId(i);
             System.out.println(i);
-            if(validate("campaign",i)==true)
-            return "THE CAMPAIGN WITH NUMBER: "+i+" EXISTS!";
+            if(validate("campaign",i)==true){
+
+            return "The campaign with number: "+i+" exists!  " +
+                    "\nID: " + campaign.getId() + ", " +
+                    "\nClicks: " + campaign.getClicks() + ", " +
+                    "\nImpressions: " + campaign.getImpressions() + ", " +
+                    "\nDate of creation: " + campaign.getCreated();
+            }
             else
                 return "The Campaign does not exist";
 
+            //http://localhost:4567/campaign/4 this is the way to write it in the address bar
         });
+
+        delete("/campaign/:id/", (request, response) -> {
+            final int a = Integer.parseInt(request.params(":id"));
+              campaign.setId(a);
+            System.out.println(a);
+            if(validate("campaign",a)==true)
+            return "Campaign " + a + "was deleted!";
+            return "" ;
+        });
+
+
+
         Banner banner = new Banner();
         get("/banner/:id", (req, res) -> {
             final int i = Integer.parseInt(req.params(":id"));
             banner.setId(i);
             if(validate("banner",i)==true) {
-                return "THE BANNER WITH NUMBER: " + i + " EXISTS!";
+                return "The banner with id: " + i + " exists! "
+                        + " ID: " +banner.getId()+
+                        " URL: " +banner.getCreative()+"    "+
+                        " Created: " + banner.getCreated()+
+                        " Clicks: " + banner.getClicks()+
+                        " Impressions: " + banner.getImpressions();
             }
             else
                 return "The Banner does not exist";
         });
+
+
     }
 
     public static boolean validate(String type, int id){
