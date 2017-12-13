@@ -10,7 +10,7 @@ public class Campaign {
     private int clicks;
     private int impressions;
 
-    private Banner[] banners = new Banner[10];
+    private String banners;
 
     public Campaign(){}
 
@@ -18,9 +18,10 @@ public class Campaign {
         this.created=LocalDateTime.now();
     }
 
-    public Campaign(int id, String name, int clicks, int impressions){
+    public Campaign(int id, String name,String banners, int clicks, int impressions){
         this.id=id;
         this.name=name;
+        this.banners=banners;
         this.clicks=clicks;
         this.impressions=impressions;
     }
@@ -65,11 +66,11 @@ public class Campaign {
         this.impressions = impressions;
     }
 
-    public Banner[] getBanners() {
+    public String getBanners() {
         return banners;
     }
 
-    public void setBanners(Banner[] banners) {
+    public void setBanners(String banners) {
         this.banners = banners;
     }
 

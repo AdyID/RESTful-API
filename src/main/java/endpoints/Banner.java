@@ -9,7 +9,7 @@ public class Banner {
     private LocalDateTime created;
     private int clicks;
     private int impressions;
-    private URL creative;
+    private String creative;
 
     public Banner(){}
 
@@ -17,10 +17,11 @@ public class Banner {
         this.created=LocalDateTime.now();
     }
 
-    public Banner(int id, int clicks, int impressions){
+    public Banner(int id, int clicks, int impressions,String creative){
         this.id=id;
         this.clicks=clicks;
         this.impressions=impressions;
+        this.creative=creative;
     }
 
     public int getId() {
@@ -55,11 +56,11 @@ public class Banner {
         this.impressions = impressions;
     }
 
-    public URL getCreative() {
+    public String getCreative() {
         return creative;
     }
 
-    public void setCreative(URL creative) {
+    public void setCreative(String creative) {
         this.creative = creative;
     }
 }
