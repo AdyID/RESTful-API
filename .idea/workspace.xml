@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7c0735f-ba04-4a39-b05c-621c4b6f10be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/main.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,19 +32,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+            <state relative-caret-position="-42">
+              <caret line="112" column="67" lean-forward="true" selection-start-line="112" selection-start-column="67" selection-end-line="112" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-                <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-                <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-                <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-                <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-                <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-                <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-                <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-                <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+                <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+                <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+                <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+                <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+                <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+                <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+                <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+                <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+                <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
               </folding>
             </state>
           </provider>
@@ -952,7 +949,7 @@
       <workItem from="1513101803790" duration="181000" />
       <workItem from="1513102532870" duration="12294000" />
       <workItem from="1513120211418" duration="7957000" />
-      <workItem from="1513268097343" duration="10054000" />
+      <workItem from="1513268097343" duration="10119000" />
     </task>
     <servers />
   </component>
@@ -989,7 +986,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89865000" />
+    <option name="totallyTimeSpent" value="89930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1066,15 +1063,15 @@
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1094,15 +1091,15 @@
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1156,15 +1153,15 @@
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1211,15 +1208,15 @@
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1258,15 +1255,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1285,15 +1282,15 @@
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1341,15 +1338,15 @@
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>
@@ -1472,19 +1469,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+        <state relative-caret-position="-42">
+          <caret line="112" column="67" lean-forward="true" selection-start-line="112" selection-start-column="67" selection-end-line="112" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513278126257" expanded="true" signature="1148:1195" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="3163:3208" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="6773:6820" ph="SELECT * FRO... campaign" />
-            <marker date="1513278126257" expanded="true" signature="6909:6954" ph="SELECT * FRO... banner" />
-            <marker date="1513278126257" expanded="true" signature="8576:8621" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="8692:8735" ph="DELETE FROM " />
-            <marker date="1513278126257" expanded="true" signature="9487:9572" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="9487:9584" ph="INSERT INTO densouadform.campaign... " />
-            <marker date="1513278126257" expanded="true" signature="10487:10577" ph="INSERT INTO densouadform.banner... " />
+            <marker date="1513278225644" expanded="true" signature="1104:1151" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="3153:3198" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="6710:6757" ph="SELECT * FRO... campaign" />
+            <marker date="1513278225644" expanded="true" signature="6846:6891" ph="SELECT * FRO... banner" />
+            <marker date="1513278225644" expanded="true" signature="8539:8584" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="8650:8693" ph="DELETE FROM " />
+            <marker date="1513278225644" expanded="true" signature="9454:9539" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="9454:9551" ph="INSERT INTO densouadform.campaign... " />
+            <marker date="1513278225644" expanded="true" signature="10471:10561" ph="INSERT INTO densouadform.banner... " />
           </folding>
         </state>
       </provider>

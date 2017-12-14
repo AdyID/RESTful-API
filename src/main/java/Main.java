@@ -1,9 +1,9 @@
 /**
  * Created by aezpr on 11/15/2017.
  */
+
 import endpoints.Banner;
 import endpoints.Campaign;
-import spark.ModelAndView;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,6 @@ import java.sql.ResultSet;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 
 import static spark.Spark.*;
 
@@ -19,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
 
         staticFileLocation("/public");
-        get("/",(req,res)->{
+        get("/", (req, res) -> {
 
             res.redirect("main.html");
             return null;
@@ -28,9 +27,9 @@ public class Main {
         delete("/campaign", (request, response) -> {
             final int a = Integer.parseInt(request.queryParams("id"));
             System.out.println(a);
-            if(deleted("campaign",a)==true)
+            if (deleted("campaign", a) == true)
                 return "Campaign " + a + " was deleted!";
-            return "" ;
+            return "";
         });
         get("/campaign", (req, res) -> {
             Campaign campaign = new Campaign();
@@ -38,8 +37,8 @@ public class Main {
             campaign.setId(i);
             System.out.println(i);
             Connection con = null;
-            String sel= "SELECT * FROM densouadform.campaign WHERE id =?";
-            Date date=null;
+            String sel = "SELECT * FROM densouadform.campaign WHERE id =?";
+            Date date = null;
             PreparedStatement ps = null;
             try {
                 con = ConnectionManager.getConnection();
@@ -49,25 +48,24 @@ public class Main {
                 while (resultSet.next()) {
                     campaign.setName(resultSet.getString("name"));
                     campaign.setBanners(resultSet.getString("banner"));
-                    date =resultSet.getDate("created");
+                    date = resultSet.getDate("created");
                     campaign.setClicks(resultSet.getInt("clicks"));
                     campaign.setImpressions(resultSet.getInt("impressions"));
                 }
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.getMessage();
-            }finally {
+            } finally {
                 ConnectionManager.closeConnection(con);
             }
-            if(campaign.getName()!=null){
-            return "The campaign with number: "+i+" exists! </br> " +
-                    "ID: " + campaign.getId() + "</br>" +
-                    "Name: " + campaign.getName() + "</br>" +
-                    "Banner link: " + campaign.getBanners() + "</br>" +
-                    "Clicks: " + campaign.getClicks() + "</br>" +
-                    "Impressions: " + campaign.getImpressions() + "</br>" +
-                    "Date of creation: " + date;
-            }
-            else
+            if (campaign.getName() != null) {
+                return "The campaign with number: " + i + " exists! </br> " +
+                        "ID: " + campaign.getId() + "</br>" +
+                        "Name: " + campaign.getName() + "</br>" +
+                        "Banner link: " + campaign.getBanners() + "</br>" +
+                        "Clicks: " + campaign.getClicks() + "</br>" +
+                        "Impressions: " + campaign.getImpressions() + "</br>" +
+                        "Date of creation: " + date;
+            } else
                 return "The Campaign does not exist";
 
             //http://localhost:4567/campaign/4 this is the way to write it in the address bar
@@ -77,71 +75,70 @@ public class Main {
         delete("/banner", (request, response) -> {
             final int a = Integer.parseInt(request.queryParams("id"));
             System.out.println(a);
-            if(deleted("banner",a)==true)
+            if (deleted("banner", a) == true)
                 return "Banner " + a + " was deleted!";
-            return "" ;
+            return "";
         });
 
         get("/banner", (req, res) -> {
             Banner banner = new Banner();
             Connection con = null;
-            String sel= "SELECT * FROM densouadform.banner WHERE id =?";
+            String sel = "SELECT * FROM densouadform.banner WHERE id =?";
             final int i = Integer.parseInt(req.queryParams("id"));
             banner.setId(i);
-            Date date=null;
-                PreparedStatement ps = null;
-                try {
-                    con = ConnectionManager.getConnection();
-                    ps = con.prepareStatement(sel);
-                    ps.setInt(1, i);
-                    ResultSet resultSet = ps.executeQuery();
-                    while (resultSet.next()) {
-                        banner.setCreative(resultSet.getString("creative"));
-                        date= resultSet.getDate("created");
-                        banner.setClicks(resultSet.getInt("clicks"));
-                        banner.setImpressions(resultSet.getInt("impressions"));
-                    }
-                }catch (Exception e){
-                    e.getMessage();
-                }finally {
-                    ConnectionManager.closeConnection(con);
+            Date date = null;
+            PreparedStatement ps = null;
+            try {
+                con = ConnectionManager.getConnection();
+                ps = con.prepareStatement(sel);
+                ps.setInt(1, i);
+                ResultSet resultSet = ps.executeQuery();
+                while (resultSet.next()) {
+                    banner.setCreative(resultSet.getString("creative"));
+                    date = resultSet.getDate("created");
+                    banner.setClicks(resultSet.getInt("clicks"));
+                    banner.setImpressions(resultSet.getInt("impressions"));
                 }
-                if(banner.getCreative()!=null) {
-                    return "The banner with id: " + i + " exists! </br>"
-                            + "ID: " + banner.getId() +"</br>"+
-                            " URL: " + banner.getCreative() + "</br>" +
-                            " Created: " + date +"</br>"+
-                            " Clicks: " + banner.getClicks() +"</br>"+
-                            " Impressions: " + banner.getImpressions();
-                }
-                else
+            } catch (Exception e) {
+                e.getMessage();
+            } finally {
+                ConnectionManager.closeConnection(con);
+            }
+            if (banner.getCreative() != null) {
+                return "The banner with id: " + i + " exists! </br>"
+                        + "ID: " + banner.getId() + "</br>" +
+                        " URL: " + banner.getCreative() + "</br>" +
+                        " Created: " + date + "</br>" +
+                        " Clicks: " + banner.getClicks() + "</br>" +
+                        " Impressions: " + banner.getImpressions();
+            } else
                 return "The Banner does not exist";
         });
 
-        post("/campaign",(req,res)->{
-           String dat = req.body();
-           String[] data = dat.split("&");
-           Campaign campaign = new Campaign();
-           int id = Integer.parseInt(data[0].substring(3));
-           String name = data[1].substring(5);
-           String bann = data[2].substring(7);
-           int click = Integer.parseInt(data[3].substring(6));
-           int imp = Integer.parseInt(data[4].substring(11));
+        post("/campaign", (req, res) -> {
+            String dat = req.body();
+            String[] data = dat.split("&");
+            Campaign campaign = new Campaign();
+            int id = Integer.parseInt(data[0].substring(3));
+            String name = data[1].substring(5);
+            String bann = data[2].substring(7);
+            int click = Integer.parseInt(data[3].substring(6));
+            int imp = Integer.parseInt(data[4].substring(11));
             System.out.println("works");
-           campaign.setId(id);
-           campaign.setName(name);
-           campaign.setBanners(bann);
-           campaign.setClicks(click);
-           campaign.setImpressions(imp);
+            campaign.setId(id);
+            campaign.setName(name);
+            campaign.setBanners(bann);
+            campaign.setClicks(click);
+            campaign.setImpressions(imp);
 
-           if(createdCamp(id,name,bann,click,imp)==true){
-               return "Campaign added succesfull";
-           }
-           return "Theres been an error while trying to create the Campaign";
+            if (createdCamp(id, name, bann, click, imp) == true) {
+                return "Campaign added succesfull";
+            }
+            return "Theres been an error while trying to create the Campaign";
 
         });
 
-        post("/banner",(req,res)->{
+        post("/banner", (req, res) -> {
             String dat = req.body();
             String[] data = dat.split("&");
             Banner banner = new Banner();
@@ -155,7 +152,7 @@ public class Main {
             banner.setClicks(click);
             banner.setImpressions(imp);
 
-            if(createdBanner(id,creative,click,imp)==true){
+            if (createdBanner(id, creative, click, imp) == true) {
                 return "Banner added succesfull";
             }
             return "Theres been an error while trying to create the Banner";
@@ -163,138 +160,134 @@ public class Main {
         });
 
 
-
-
     }
 
-    public static String[] validate(String type, int id, String[] strArray){
+    public static String[] validate(String type, int id, String[] strArray) {
         Connection con = null;
-        String sel= null;
+        String sel = null;
         Campaign campaign = new Campaign();
         Banner banner = new Banner();
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        int check=0; //1 for campaign , 2 for banner
-        if(type.equals("campaign")){
-         sel= "SELECT * FROM densouadform.campaign WHERE id =?";
-         check=1;
-        }
-        else if(type.equals("banner")){
-            sel= "SELECT * FROM densouadform.banner WHERE id =?";
-            check=2;
+        int check = 0; //1 for campaign , 2 for banner
+        if (type.equals("campaign")) {
+            sel = "SELECT * FROM densouadform.campaign WHERE id =?";
+            check = 1;
+        } else if (type.equals("banner")) {
+            sel = "SELECT * FROM densouadform.banner WHERE id =?";
+            check = 2;
         }
 
         PreparedStatement ps = null;
-        try{
+        try {
             con = ConnectionManager.getConnection();
             ps = con.prepareStatement(sel);
-            ps.setInt(1,id);
+            ps.setInt(1, id);
             ResultSet resultSet = ps.executeQuery();
-            if(resultSet.next()){
-                if(check==1){
-                    strArray[0]=Integer.toString(resultSet.getInt("id"));
-                    strArray[1]=resultSet.getString("name");
-                    strArray[2]=resultSet.getString("banner");
-                    strArray[3]=df.format(resultSet.getDate("created"));
-                    strArray[4]=Integer.toString(resultSet.getInt("clicks"));
-                    strArray[5]=Integer.toString(resultSet.getInt("impressions"));
-                }
-                else{
-                    strArray[0]=Integer.toString(resultSet.getInt("id"));
-                    strArray[1]=resultSet.getString("creative");
-                    strArray[2]=df.format(resultSet.getDate("created"));
-                    strArray[3]=Integer.toString(resultSet.getInt("clicks"));
-                    strArray[4]=Integer.toString(resultSet.getInt("impressions"));
+            if (resultSet.next()) {
+                if (check == 1) {
+                    strArray[0] = Integer.toString(resultSet.getInt("id"));
+                    strArray[1] = resultSet.getString("name");
+                    strArray[2] = resultSet.getString("banner");
+                    strArray[3] = df.format(resultSet.getDate("created"));
+                    strArray[4] = Integer.toString(resultSet.getInt("clicks"));
+                    strArray[5] = Integer.toString(resultSet.getInt("impressions"));
+                } else {
+                    strArray[0] = Integer.toString(resultSet.getInt("id"));
+                    strArray[1] = resultSet.getString("creative");
+                    strArray[2] = df.format(resultSet.getDate("created"));
+                    strArray[3] = Integer.toString(resultSet.getInt("clicks"));
+                    strArray[4] = Integer.toString(resultSet.getInt("impressions"));
                 }
 
                 System.out.println(strArray[0]);
                 return strArray;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.getMessage();
-        }finally {
+        } finally {
             ConnectionManager.closeConnection(con);
         }
         return null;
     }
 
-    public static boolean deleted(String type,int id){
+    public static boolean deleted(String type, int id) {
         Connection con = null;
-        String sel= null;
-        if(type.equals("campaign")){
-            sel= "DELETE FROM densouadform.campaign WHERE id =?";
-        }
-        else if(type.equals("banner")){
-            sel= "DELETE FROM densouadform.banner WHERE id =?";
+        String sel = null;
+        if (type.equals("campaign")) {
+            sel = "DELETE FROM densouadform.campaign WHERE id =?";
+        } else if (type.equals("banner")) {
+            sel = "DELETE FROM densouadform.banner WHERE id =?";
         }
 
         PreparedStatement ps = null;
-        try{
+        try {
             con = ConnectionManager.getConnection();
             ps = con.prepareStatement(sel);
-            ps.setInt(1,id);
+            ps.setInt(1, id);
             ps.execute();
             ps.close();
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.getMessage();
-        }finally {
+        } finally {
             ConnectionManager.closeConnection(con);
         }
         return false;
     }
 
-    public static boolean createdCamp(int id,String name,String banner, int click, int impr){
+    public static boolean createdCamp(int id, String name, String banner, int click, int impr) {
 
 
         Connection con = null;
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date utilDate = new Date();
         java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-        String sel= "INSERT INTO densouadform.campaign (id,name,banner,created,clicks,impressions) VALUES(?,?,?,?,?,?)";
+        String sel = "INSERT INTO densouadform.campaign (id,name,banner,created,clicks,impressions) VALUES(?,?,?,?,?,?)";
 
-        PreparedStatement ps =null;
-        try{
-            con= ConnectionManager.getConnection();
+        PreparedStatement ps = null;
+        try {
+            con = ConnectionManager.getConnection();
             ps = con.prepareStatement(sel);
-            ps.setInt(1,id);
-            ps.setString(2,name);
-            ps.setString(3,banner);
+            ps.setInt(1, id);
+            ps.setString(2, name);
+            ps.setString(3, banner);
             ps.setDate(4, sqlDate);
-            ps.setInt(5,click);
-            ps.setInt(6,impr);
+            ps.setInt(5, click);
+            ps.setInt(6, impr);
             ps.executeUpdate();
             ps.close();
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.getMessage();
-        }finally {
+        } finally {
             ConnectionManager.closeConnection(con);
         }
         return false;
     }
-    public static boolean createdBanner(int id,String creative,int click,int impr){
+
+    public static boolean createdBanner(int id, String creative, int click, int impr) {
 
         Connection con = null;
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date utilDate = new Date();
         java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-        String sel= "INSERT INTO densouadform.banner (id,creative,created,clicks,impressions) VALUES(?,?,?,?,?)";
+        String sel = "INSERT INTO densouadform.banner (id,creative,created,clicks,impressions) VALUES(?,?,?,?,?)";
 
-        PreparedStatement ps =null;
-        try{
-            con= ConnectionManager.getConnection();
+        PreparedStatement ps = null;
+        try {
+            con = ConnectionManager.getConnection();
             ps = con.prepareStatement(sel);
-            ps.setInt(1,id);
-            ps.setString(2,creative);
+            ps.setInt(1, id);
+            ps.setString(2, creative);
             ps.setDate(3, sqlDate);
-            ps.setInt(4,click);
-            ps.setInt(5,impr);
+            ps.setInt(4, click);
+            ps.setInt(5, impr);
             ps.executeUpdate();
             ps.close();
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.getMessage();
-        }finally {
+        } finally {
             ConnectionManager.closeConnection(con);
         }
         return false;
