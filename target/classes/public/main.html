@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+<h1>Seeing the desired campaign/banner</h1>
+<form action="/campaign" method="get">
+    Desired ID for campaign:</br>
+    <input type="text" name="id">
+    </br>
+    </br>
+    <input type="submit" value="Campaign">
+    </br>
+    </br>
+
+</form>
+<form action="/banner" method="get">
+    Desired ID for banner:</br>
+    <input type="text" name="id"></br></br>
+    <input type="submit" value="Banner">
+    </br>
+    </br>
+</form>
+</br>
+
+<h1>Create the desired campaign/banner</h1>
+
+<form action="/campaign" method="post">
+    Desired ID for campaign:</br>
+    <input type="text" name="id">
+
+    </br>
+    Desired name for the campaign:</br>
+    <input type="text" name="name"></br>
+    Desired banner link for the campaign:</br>
+    <input type="text" name="banner"></br>
+    Number of clicks for the campaign:</br>
+    <input type="text" name="click"></br>
+    Number of impressions for the campaign:</br>
+    <input type="text" name="impression"></br>
+
+    <input type="submit" value="Create Campaign">
+    </br></br></br>
+
+</form>
+<form action="/banner" method="post">
+    Desired ID for banner:</br>
+    <input type="text" name="id"></br>
+    Desired link for the banner:</br>
+    <input type="text" name="creative"></br>
+    Number of clicks:</br>
+    <input type="text" name="click"></br>
+    Number of impressions:</br>
+    <input type="text" name="impression"></br>
+
+    </br></br>
+    <input type="submit" value="Create Banner">
+    </br>
+    </br>
+</form>
+</body>
+</html>
