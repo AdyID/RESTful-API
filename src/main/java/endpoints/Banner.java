@@ -60,7 +60,7 @@ public class Banner {
         return creative;
     }
 
-    public void setCreative(String creative) {
+    public void setCreative(String  acreative) {
         this.creative = creative;
     }
 }

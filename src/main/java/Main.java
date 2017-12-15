@@ -24,9 +24,9 @@ public class Main {
             return null;
         });
 
-        delete("/campaign", (request, response) -> {
-            final int a = Integer.parseInt(request.queryParams("id"));
-            System.out.println(a);
+        delete("/campaign/:id", (request, response) -> {
+            final int a = Integer.parseInt(request.params(":id"));
+            System.out.println(a);wa
             if (deleted("campaign", a) == true)
                 return "Campaign " + a + " was deleted!";
             return "";
@@ -72,8 +72,8 @@ public class Main {
         });
 
 
-        delete("/banner", (request, response) -> {
-            final int a = Integer.parseInt(request.queryParams("id"));
+        delete("/banner/:id", (request, response) -> {
+            final int a = Integer.parseInt(request.params(":id"));
             System.out.println(a);
             if (deleted("banner", a) == true)
                 return "Banner " + a + " was deleted!";
@@ -158,56 +158,6 @@ public class Main {
             return "Theres been an error while trying to create the Banner";
 
         });
-
-
-    }
-
-    public static String[] validate(String type, int id, String[] strArray) {
-        Connection con = null;
-        String sel = null;
-        Campaign campaign = new Campaign();
-        Banner banner = new Banner();
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        int check = 0; //1 for campaign , 2 for banner
-        if (type.equals("campaign")) {
-            sel = "SELECT * FROM densouadform.campaign WHERE id =?";
-            check = 1;
-        } else if (type.equals("banner")) {
-            sel = "SELECT * FROM densouadform.banner WHERE id =?";
-            check = 2;
-        }
-
-        PreparedStatement ps = null;
-        try {
-            con = ConnectionManager.getConnection();
-            ps = con.prepareStatement(sel);
-            ps.setInt(1, id);
-            ResultSet resultSet = ps.executeQuery();
-            if (resultSet.next()) {
-                if (check == 1) {
-                    strArray[0] = Integer.toString(resultSet.getInt("id"));
-                    strArray[1] = resultSet.getString("name");
-                    strArray[2] = resultSet.getString("banner");
-                    strArray[3] = df.format(resultSet.getDate("created"));
-                    strArray[4] = Integer.toString(resultSet.getInt("clicks"));
-                    strArray[5] = Integer.toString(resultSet.getInt("impressions"));
-                } else {
-                    strArray[0] = Integer.toString(resultSet.getInt("id"));
-                    strArray[1] = resultSet.getString("creative");
-                    strArray[2] = df.format(resultSet.getDate("created"));
-                    strArray[3] = Integer.toString(resultSet.getInt("clicks"));
-                    strArray[4] = Integer.toString(resultSet.getInt("impressions"));
-                }
-
-                System.out.println(strArray[0]);
-                return strArray;
-            }
-        } catch (Exception e) {
-            e.getMessage();
-        } finally {
-            ConnectionManager.closeConnection(con);
-        }
-        return null;
     }
 
     public static boolean deleted(String type, int id) {

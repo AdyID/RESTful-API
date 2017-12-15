@@ -73,5 +73,4 @@ public class Campaign {
     public void setBanners(String banners) {
         this.banners = banners;
     }
-
 }
